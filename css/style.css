@@ -1,0 +1,891 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+main {
+    background-image: url('../img/background.png');
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+.area-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s;
+    height: 975px;
+}
+.logo {
+    margin-left: 8px;
+    height: 240px;
+    transition: 1s;
+}
+.logo img {
+    transition: 1s;
+}
+.title-home {
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #fff;
+    transition: 1s;
+}
+.bts-home {
+    width: 550px;
+    height: 60px;
+    background-color: #000000;
+    color: #00ff00;
+    font-size: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px #00ff003a;
+    cursor: pointer;
+    transition: 1s;
+}
+.bts-home a {
+    text-decoration: none;
+    color: #00ff00;
+}
+.bts-home:hover {
+    background-color: #00000010;
+}
+.slogan-home {
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 8px;
+    margin-bottom: 80px;
+    color: #999999;
+    transition: 1s;
+}
+.svg-home {
+    width: 100vw;
+}
+.svg-home img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+}
+/*AREA SERVICES*/
+.title-geral {
+    padding-top: 75px;
+    padding-bottom: 25px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s;
+}
+.area-service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: 1s;
+}
+.service-bloc {
+    width: 280px;
+    height: 250px;
+    background-color: #333333;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.bloc-salas,
+.bloc-quartos,
+.bloc-cozinhas,
+.bloc-banheiros,
+.bloc-escritorios,
+.bloc-lojas,
+.bloc-gourmet,
+.bloc-decorativo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.bloc-salas {
+    position: relative;
+    background-image: url('../img/services/background1.png');
+    overflow-x: hidden;
+}
+.bloc-salas::before {
+    content: 'Paines, Homes, Centros, Aparadores, Prateleiras e Nichos.';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 10px;
+    width: 100%;
+    height: 0px;
+    background-color: #00ff00;
+    transition: all .7s;
+    font-size: 16px;
+    transition: 1s;
+}
+.bloc-salas:hover:before {
+    height: 100px;
+}
+.bloc-quartos {
+    position: relative;
+    background-image: url('../img/services/background2.png');
+    overflow-x: hidden;
+}
+.bloc-quartos::before {
+    content: 'Guarda-roupas, sapateiras, Gaveteiros, Cômodas, Criados-mudos, Escrivaninha, Penteadeira, Paineis, estantes e etc.';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 10px;
+    width: 100%;
+    height: 0px;
+    background-color: #00ff00;
+    transition: all .7s;
+    font-size: 16px;
+}
+.bloc-quartos:hover:before {
+    height: 150px;
+}
+.bloc-cozinhas {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('../img/services/background3.png');
+}
+.bloc-cozinhas::before {
+    content: 'Armários, Balcões, Banquetas, Fruteiras, Paneleiros, Mesas, Degas e etc.';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 10px;
+    width: 100%;
+    height: 0px;
+    background-color: #00ff00;
+    transition: all .7s;
+    font-size: 16px;
+}
+.bloc-cozinhas:hover:before {
+    height: 130px;
+}
+.bloc-banheiros {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('../img/services/background4.png');
+}
+.bloc-banheiros::before {
+    content: 'Balcões, Prateleira, Móveis com cuba e etc.';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 10px;
+    width: 100%;
+    height: 0px;
+    background-color: #00ff00;
+    transition: all .7s;
+    font-size: 16px;
+}
+.bloc-banheiros:hover:before {
+    height: 100px;
+}
+.bloc-escritorios {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('../img/services/background5.png');
+}
+.bloc-escritorios::before {
+    content: 'Armários, Balcões, Centro, Escrivaninha, Estante de livros, Mesas e etc.';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 10px;
+    width: 100%;
+    height: 0px;
+    background-color: #00ff00;
+    transition: all .7s;
+    font-size: 16px;
+}
+.bloc-escritorios:hover:before {
+    height: 120px;
+}
+.bloc-lojas {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('../img/services/background6.png');
+}
+.bloc-lojas::before {
+    content: 'Armários, Balcões, Centro, Escrivaninha, Estante de livros, CristaLeiras, Banquetas, Mesas e etc.';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 10px;
+    width: 100%;
+    height: 0px;
+    background-color: #00ff00;
+    transition: all .7s;
+    font-size: 16px;
+}
+.bloc-lojas:hover:before {
+    height: 130px;
+}
+.bloc-gourmet {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('../img/services/background7.png');
+}
+.bloc-gourmet::before {
+    content: 'Bancada, armários, Nichos, Prateleiras, Banquetas, Móveis de pia, homes, paines e etc.';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 10px;
+    width: 100%;
+    height: 0px;
+    background-color: #00ff00;
+    transition: all .7s;
+    font-size: 16px;
+}
+.bloc-gourmet:hover:before {
+    height: 130px;
+}
+.bloc-decorativo {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('../img/services/background8.png');
+}
+.bloc-decorativo::before {
+    content: 'Nichos, prateleiras, plaquinhas, bases e etc';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 10px;
+    width: 100%;
+    height: 0px;
+    background-color: #00ff00;
+    transition: all .7s;
+    font-size: 16px;
+}
+.bloc-decorativo:hover:before {
+    height: 100px;
+}
+.service-tile {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+.desc-desconto {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.desc-desconto a {
+    color: #00ff00;
+    text-shadow: 1px 1px 2px #000;
+}
+.desc-desconto span {
+    color: #00ff00;
+    text-shadow: 1px 1px 2px #000;
+}
+.desc-desconto a:hover {
+    color: #866feb;
+    cursor: pointer;
+}
+/*AREA PROCESSO*/
+.title-processo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.area-processo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+.processo-bloc {
+    width: 150px;
+    height: 150px;
+    background-color: #00ff00;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: 1s;
+}
+.processo-barra {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    background-color: #333333;
+}
+.processo-desc{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.desc-processo-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+.processo-recomendacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recomendacao-bloc {
+    margin: 50px 25px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+}
+.recomendacao-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+.recomendacao-stars {
+    margin-bottom: 5px;
+}
+.recomendacao-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-bottom: 10px;
+}
+.icon-image1 {
+    background-image: url('../img/services/iconfoto2.png');
+}
+.icon-image2 {
+    background-image: url('../img/services/iconfoto3.png');
+}
+.icon-image3 {
+    background-image: url('../img/services/iconfoto1.png');
+}
+.recomendacao-desc {
+    width: 250px;
+    font-size: 15px;
+    color: #999999;
+    text-align: justify;
+}
+.process-contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.contato-area {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.contato-image {
+    height: 40px;
+}
+.contato-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+.contato-desc {
+    font-size: 13px;
+    color: #666666;
+    width: 275px;
+    text-align: center;
+    font-weight: bold;
+}
+/*AREA CONTACT*/
+.section-contact {
+    position: relative;
+}
+.area-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 250px;
+}
+.contact-bloc {
+    background-color: #00ff00;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+.bloc-form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    align-items: center;
+}
+.form-title {
+    font-weight: bold;
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form-desc {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 0px;
+}
+.input-form {
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: transparent;
+    outline: none;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #666666;
+}
+.form-input textarea {
+    width: 350px;
+    height: 120px;
+    border-radius: 5px;
+    border: transparent;
+    outline: none;
+    padding: 10px;
+    font-weight: bold;
+    color: #666666;
+    resize: none;
+}
+.area-submit {
+    width: 350px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-submit {
+    font-weight: bold;
+    font-size: 18px;
+    color: #00ff00;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: #333333;
+    transition: .5s ease;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.area-submit input:hover {
+    background-color: #333333c2;
+}
+.bloc-mapa img {
+    cursor: pointer;
+    border-radius: 10px;
+}
+.svg-contact {
+    width: 100vw;
+}
+.svg-contact img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*AREA FOOTER*/
+footer {
+    background-color: #323232;
+}
+.area-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+.logo-footer {
+    width: 200px;
+    margin-bottom: 5px;
+}
+.logo-footer img {
+    width: 100%;
+}
+.footer-social {
+    width: 225px;
+    display: flex;
+    margin-bottom: 5px;
+}
+.footer-social img {
+    padding: 0px 20px;
+    width: 32px;
+}
+.direitos {
+    color: #999;
+}
+/*AREA THANKS*/
+.thanks {
+    background-image: url('../img/background.png');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s ease;
+}
+.thanks-logo {
+    height: 230px;
+}
+.thanks-title {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #fff;
+    transition: 1s;
+}
+.thanks-desc {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    transition: 1s ease;
+}
+.thanks-return {
+    margin-top: 10px;
+    padding: 15px 20px;
+    background-color: #00ff00;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.thanks-return a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    transition: 1s;
+}
+.thanks-return:hover {
+    background-color: #00ff009a;
+}
+.thanks-social {
+    margin-top: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.thanks-social img {
+    width: 32px;
+    cursor: pointer;
+}
+@media (max-width:1400px) {
+    .svg-contact img {
+        bottom: -1px;
+    }
+    .title-geral {
+        font-size: 40px;
+    }
+    .desc-desconto {
+        font-size: 25px;
+    }
+    .area-service {
+        justify-content: center;
+    }
+    .area-processo {
+        justify-content: space-around;
+    }
+    .processo-bloc {
+        width: 130px;
+        height: 130px;
+    }
+    .processo-desc {
+        justify-content: space-around;
+    }
+    .recomendacao-bloc {
+        margin: 25px;
+        width: 250px;
+        height: 300px;
+        padding: 15px;
+        transition: 1s;
+    }
+    .recomendacao-title {
+        font-size: 20px;
+    }
+    .recomendacao-desc {
+        width: 200px;
+        font-size: 12px;
+    }
+    .input-form {
+        width: 700px;
+        height: 50px;
+    }
+    .form-input textarea {
+        width: 700px;
+        height: 175px;
+    }
+    .input-submit {
+        padding: 10px;
+        font-size: 19px;
+    }
+    .area-submit {
+        width: auto;
+    }
+    .form-title {
+        font-size: 16px;
+    }
+    .contact-bloc {
+        display: block;
+    }
+    .bloc-form {
+        margin-right: 0px;
+    }
+    .bloc-mapa img {
+        width: 700px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .form-desc .input-assunto {
+        display: block;
+    }
+}
+@media (max-width:1024px) {
+    /*AREA THANKS*/
+    .thanks-desc {
+        width: 768px;
+        text-align: center;
+    }
+}
+@media (max-width:768px) {
+    .area-home {
+        height: 100vh;
+    }
+    .title-geral {
+        font-size: 35px;
+    }
+    .desc-desconto {
+        font-size: 20px;
+    }
+    .desc-process-contrato {
+        display: none;
+    }
+    .desc-processo-title {
+        font-size: 20px;
+    }
+    .processo-recomendacao {
+        flex-wrap: wrap;
+    }
+    .process-contato {
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .bloc-mapa img {
+        display: none;
+    }
+    .form-title {
+        font-size: 24px;
+    }
+    .input-form {
+        width: 400px;
+    }
+    .form-input textarea {
+        width: 400px;
+    }
+    .bloc-orcamento,
+    .bloc-confeccao,
+    .bloc-entrega,
+    .bloc-instalacao {
+        position: relative;
+        overflow-x: hidden;
+    }
+    .bloc-orcamento::before,
+    .bloc-confeccao::before,
+    .bloc-entrega::before,
+    .bloc-instalacao::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        position: absolute;
+        color: #fff;
+        font-weight: bold;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0px;
+        background-color: #000000;
+        transition: all .7s;
+        font-size: 16px;
+    }
+    .bloc-orcamento::before {
+        content: 'Orçamento';
+    }
+    .bloc-confeccao::before {
+        content: 'Confecção';
+    }
+    .bloc-entrega::before {
+        content: 'Entrega';
+    }
+    .bloc-instalacao::before {
+        content: 'Instalação';
+    }
+    .bloc-orcamento:hover:before,
+    .bloc-confeccao:hover:before,
+    .bloc-entrega:hover:before,
+    .bloc-instalacao:hover:before{
+        height: 50px;
+    }
+    /*AREA THANKS*/
+    .thanks-desc {
+        width: 550px;
+        text-align: center;
+    }
+    .thanks-title {
+        font-size: 60px;
+    }
+    .thanks-logo img {
+        width: 400px;
+    }
+}
+@media (max-width: 550px) {
+    .title-geral {
+        font-size: 30px;
+    }
+    .logo {
+        height: auto;
+    }
+    .logo img{
+        width: 230px;
+    }
+    .title-home {
+        font-size: 16px;
+    }
+    .bts-home {
+        width: 300px;
+        height: 45px;
+        font-size: 15px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .slogan-home {
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+    .desc-desconto span {
+        text-shadow: 0px 0px 0px #00000000;
+        color: #000;
+    }
+    .area-processo {
+        flex-wrap: wrap;
+    }
+    .processo-bloc {
+        cursor: pointer;
+        margin: 10px;
+    }
+    .processo-barra {
+        height: 3px;
+    }
+    .title-processo {
+        font-size: 27px;
+        padding-bottom: 30px;
+    }
+    .processo-desc {
+        display: none;
+    }
+    .input-form {
+        width: 280px;
+    }
+    .form-input textarea {
+        width: 280px;
+    }
+    .direitos {
+        font-size: 14px;
+    }
+    /*AREA THANKS*/
+    .thanks-desc {
+        width: 255px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .thanks-title {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    .thanks-logo {
+        height: auto;
+    }
+    .thanks-logo img {
+        width: 280px;
+    }
+    .thanks-return {
+        padding: 10px;
+    }
+    .thanks-return a {
+        font-size: 15px;
+    }
+}
